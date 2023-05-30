@@ -31,18 +31,28 @@ window.addEventListener('DOMContentLoaded', () => {
   const quizArray = [
     {
       q: 'Which is the third planet from the sun?',
-      o: ['Saturn', 'Earth', 'Pluto', 'Mars'],
+      o: ['Earth', 'Saturn', 'Pluto', 'Mars'],
       a: 1, // array index 1 - so Earth is the correct answer here
     },
     {
       q: 'Which is the largest ocean on Earth?',
-      o: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
+      o: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
       a: 3,
     },
     {
-      q: 'What is the capital of Australia',
-      o: ['Sydney', 'Canberra', 'Melbourne', 'Perth'],
+      q: 'What is the capital of Australia?',
+      o: ['Canberra', 'Sydney', 'Melbourne', 'Perth'],
       a: 1,
+    },
+    {
+      q: 'What is the tallest tower on Earth?',
+      o: ['Shanghai Tower', 'Burj Khalifa', 'Warisan Merdeka Tower', 'Lotte World Tower'],
+      a: 2,
+    },
+    {
+      q: 'Which country has the largest population?',
+      o: ['India', 'Pakistan', 'United States', 'China'],
+      a:4,
     },
   ];
 
