@@ -39,12 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
       o: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
       a: 3,
     },
-    {
-      q: 'What is the capital of Australia?',
-      o: ['Canberra', 'Sydney', 'Melbourne', 'Perth'],
-      a: 1,
-    },
-    {
+       {
       q: 'What is the tallest tower on Earth?',
       o: ['Shanghai Tower', 'Burj Khalifa', 'Warisan Merdeka Tower', 'Lotte World Tower'],
       a: 2,
@@ -52,8 +47,8 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       q: 'Which country has the largest population?',
       o: ['India', 'Pakistan', 'United States', 'China'],
-      a:4,
-    },
+      a: 4,
+    }
   ];
 
   // function to Display the quiz questions and answers from the object
@@ -83,17 +78,24 @@ window.addEventListener('DOMContentLoaded', () => {
         let r = `radio_${index}_${i}`;
         liElement = document.querySelector('#' + li);
         radioElement = document.querySelector('#' + r);
-
-        if (quizItem.a == i) {
-          //change background color of li element here
-        }
-
+        //console.log(quizItem.a)
+        
+        if (quizItem.a === i) {
+          liElement.style.backgroundColor == 'green';
+         // console.log(i)
+        
         if (radioElement.checked) {
           // code for task 1 goes here
-        }
+          console.log(quizItem.a)
+
+        }}
       }
     });
   };
+
+
+  let btnSubmit=document.querySelector('#btnSubmit')
+  btnSubmit.addEventListener('click', calculateScore)
 
   // call the displayQuiz function
   displayQuiz();
